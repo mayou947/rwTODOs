@@ -1,0 +1,181 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red180\green36\blue25;\red159\green160\blue28;
+\red46\green174\blue187;\red47\green180\blue29;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c76409\c21698\c12524;\cssrgb\c68468\c68012\c14208;
+\cssrgb\c20196\c73240\c78250;\cssrgb\c20238\c73898\c14947;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Fri Jan 22 13:32:18 on ttys002\
+\
+The default interactive shell is now zsh.\
+To update your account to use zsh, please run `chsh -s /bin/zsh`.\
+For more details, please visit https://support.apple.com/kb/HT208050.\
+Mays-MacBook-Air:~ may$ cd Desktop/rwTODOs\
+Mays-MacBook-Air:rwTODOs may$ vim tutorials/arts_n_crafts.md\
+Mays-MacBook-Air:rwTODOs may$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf3 tutorials/arts_n_crafts.md\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+Mays-MacBook-Air:rwTODOs may$ git add tutorials/*\
+Mays-MacBook-Air:rwTODOs may$ git commit -m "starting the arts'n'crafts team"\
+[master 24fc5ec] starting the arts'n'crafts team\
+ 1 file changed, 4 insertions(+)\
+ create mode 100644 tutorials/arts_n_crafts.md\
+Mays-MacBook-Air:rwTODOs may$ git log\
+\cf4 commit 24fc5ece55b7d7c04da4bac9b35e204266b52363 (
+\f1\b \cf5 HEAD -> \cf6 master
+\f0\b0 \cf4 )\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Fri Jan 22 14:52:08 2021 +0800\
+\
+    starting the arts'n'crafts team\
+\
+\cf4 commit f4341b7dd21212e7902d1aaf6d448a8e846ad86c\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Fri Jan 22 13:49:41 2021 +0800\
+\
+    Creating the tutorials directory\
+\
+\cf4 commit e4f838708e08b6a93a9a4c1f1de9e9d7134eb844\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Fri Jan 22 13:41:29 2021 +0800\
+\
+    Adding the new tutorials by tutorials book idea (IF I KEEP WRITING...)\
+    \
+    Convention dictates that you title a commit, and then miss a\
+    line, before filling in any detailed comments about the\
+    commit.\
+\
+\cf4 commit 23f8378892a8967a343b83ce3a1e3aaea87db8b9 (
+\f1\b \cf3 origin/master
+\f0\b0 \cf4 , 
+\f1\b \cf3 origin/HEAD
+\f0\b0 \cf4 )\cf2 \
+Mays-MacBook-Air:rwTODOs may$ log -p\
+log: unrecognized option `-p'\
+usage:\
+    log <command>\
+\
+global options:\
+    -?, --help\
+    -q, --quiet\
+    -v, --verbose\
+\
+commands:\
+    collect         gather system logs into a log archive\
+    config          view/change logging system settings\
+    erase           delete system logging data\
+    show            view/search system logs\
+    stream          watch live system logs\
+    stats           show system logging statistics\
+\
+further help:\
+    log help <command>\
+    log help predicates\
+Mays-MacBook-Air:rwTODOs may$ git log -p\
+\cf4 commit 24fc5ece55b7d7c04da4bac9b35e204266b52363 (
+\f1\b \cf5 HEAD -> \cf6 master
+\f0\b0 \cf4 )\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Fri Jan 22 14:52:08 2021 +0800\
+\
+    starting the arts'n'crafts team\
+\
+
+\f1\b diff --git a/tutorials/arts_n_crafts.md b/tutorials/arts_n_crafts.md
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..f83c7fc
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/tutorials/arts_n_crafts.md
+\f0\b0 \
+\cf5 @@ -0,0 +1,4 @@\cf2 \
+\cf6 +# Arts'n'Crafts Tutorial Ideas\cf2 \
+\cf6 +\cf2 \
+\cf6 +- [ ] Glass blowing\cf2 \
+\cf6 +- [ ] Felting\cf2 \
+\
+\cf4 commit f4341b7dd21212e7902d1aaf6d448a8e846ad86c\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Fri Jan 22 13:49:41 2021 +0800\
+\
+    Creating the tutorials directory\
+\
+
+\f1\b diff --git a/tutorials/.keep b/tutorials/.keep
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..e69de29
+\f0\b0 \
+\
+\cf4 commit e4f838708e08b6a93a9a4c1f1de9e9d7134eb844\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Fri Jan 22 13:41:29 2021 +0800\
+\
+    Adding the new tutorials by tutorials book idea (IF I KEEP WRITING...)\
+    \
+    Convention dictates that you title a commit, and then miss a\
+    line, before filling in any detailed comments about the\
+    commit.\
+\
+
+\f1\b diff --git a/book_ideas.md b/book_ideas.md
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..e69de29
+\f0\b0 \
+
+\f1\b diff --git a/books/book-ideas.md b/books/book-ideas.md
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..ac1a479
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/books/book-ideas.md
+\f0\b0 \
+\cf5 @@ -0,0 +1 @@\cf2 \
+\cf6 +[] Writing tutorials, by tutorials\cf2 \
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index f924368..83ff4ea 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf5 @@ -7,3 +7,4 @@\cf2 \
+ - [ ] CVS by tutorials\
+ - [ ] Fortran for fun and profit\
+Mays-MacBook-Air:rwTODOs may$ \
+}
