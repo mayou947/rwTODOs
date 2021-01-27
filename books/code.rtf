@@ -1,0 +1,1762 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red180\green36\blue25;\red46\green174\blue187;
+\red47\green180\blue29;\red64\green11\blue217;\red159\green160\blue28;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c76409\c21698\c12524;\cssrgb\c20196\c73240\c78250;
+\cssrgb\c20238\c73898\c14947;\cssrgb\c32308\c18668\c88227;\cssrgb\c68468\c68012\c14208;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Fri Jan 22 16:25:48 on ttys002\
+\
+The default interactive shell is now zsh.\
+To update your account to use zsh, please run `chsh -s /bin/zsh`.\
+For more details, please visit https://support.apple.com/kb/HT208050.\
+Mays-MacBook-Air:~ may$ cd Desktop/rwTODOS\
+Mays-MacBook-Air:rwTODOS may$ vim books/book_ideas.md\
+Mays-MacBook-Air:rwTODOS may$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 3 commits.\
+  (use "git push" to publish your local commits)\
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf3 modified:   books/book_ideas.md\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf3 tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png\cf2 \
+	\cf3 tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png\cf2 \
+	\cf3 tutorials/Untitled.rtf\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mays-MacBook-Air:rwTODOS may$ git diff\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+Mays-MacBook-Air:rwTODOS may$ git add .\
+Mays-MacBook-Air:rwTODOS may$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 3 commits.\
+  (use "git push" to publish your local commits)\
+\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 modified:   books/book_ideas.md\cf2 \
+	\cf5 new file:   tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png\cf2 \
+	\cf5 new file:   tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png\cf2 \
+	\cf5 new file:   tutorials/Untitled.rtf\cf2 \
+\
+Mays-MacBook-Air:rwTODOS may$ git diff\
+Mays-MacBook-Air:rwTODOS may$ git diff -- staged\
+Mays-MacBook-Air:rwTODOS may$ \
+Mays-MacBook-Air:rwTODOS may$ git diff --staged\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+Mays-MacBook-Air:rwTODOS may$ git diff\
+Mays-MacBook-Air:rwTODOS may$ git diff --staged\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+:...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+:...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+:...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+:...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..2c00aee
+\f0\b0 \
+:...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..2c00aee
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+:...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..2c00aee
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/tutorials/Untitled.rtf
+\f0\b0 \
+\cf4 @@ -0,0 +1,181 @@\cf2 \
+\cf5 +\{\\rtf1\\ansi\\ansicpg1252\\cocoartf2577\cf2 \
+:...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..2c00aee
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/tutorials/Untitled.rtf
+\f0\b0 \
+\cf4 @@ -0,0 +1,181 @@\cf2 \
+\cf5 +\{\\rtf1\\ansi\\ansicpg1252\\cocoartf2577\cf2 \
+\cf5 +\\cocoatextscaling0\\cocoaplatform0\{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\}\cf2 \
+:...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..2c00aee
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/tutorials/Untitled.rtf
+\f0\b0 \
+\cf4 @@ -0,0 +1,181 @@\cf2 \
+\cf5 +\{\\rtf1\\ansi\\ansicpg1252\\cocoartf2577\cf2 \
+\cf5 +\\cocoatextscaling0\\cocoaplatform0\{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\}\cf2 \
+\cf5 +\{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red180\\green36\\blue25;\\red159\\green160\\blue28;\cf2 \
+:...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..2c00aee
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/tutorials/Untitled.rtf
+\f0\b0 \
+\cf4 @@ -0,0 +1,181 @@\cf2 \
+\cf5 +\{\\rtf1\\ansi\\ansicpg1252\\cocoartf2577\cf2 \
+\cf5 +\\cocoatextscaling0\\cocoaplatform0\{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\}\cf2 \
+\cf5 +\{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red180\\green36\\blue25;\\red159\\green160\\blue28;\cf2 \
+\cf5 +\\red46\\green174\\blue187;\\red47\\green180\\blue29;\}\cf2 \
+\cf5 +\{\\*\\expandedcolortbl;;\\csgray\\c0;\\cssrgb\\c76409\\c21698\\c12524;\\cssrgb\\c68468\\c6\cf2 :...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..2c00aee
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/tutorials/Untitled.rtf
+\f0\b0 \
+\cf4 @@ -0,0 +1,181 @@\cf2 \
+\cf5 +\{\\rtf1\\ansi\\ansicpg1252\\cocoartf2577\cf2 \
+\cf5 +\\cocoatextscaling0\\cocoaplatform0\{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\}\cf2 \
+\cf5 +\{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red180\\green36\\blue25;\\red159\\green160\\blue28;\cf2 \
+\cf5 +\\red46\\green174\\blue187;\\red47\\green180\\blue29;\}\cf2 \
+\cf5 +\{\\*\\expandedcolortbl;;\\csgray\\c0;\\cssrgb\\c76409\\c21698\\c12524;\\cssrgb\\c68468\\c68012\\c14208;\cf2 \
+\cf5 +\\cssrgb\\c20196\\c73240\\c78250;\\cssrgb\\c20238\\c73898\\c14947;\}\cf2 \
+:...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..2c00aee
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/tutorials/Untitled.rtf
+\f0\b0 \
+\cf4 @@ -0,0 +1,181 @@\cf2 \
+\cf5 +\{\\rtf1\\ansi\\ansicpg1252\\cocoartf2577\cf2 \
+\cf5 +\\cocoatextscaling0\\cocoaplatform0\{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\}\cf2 \
+\cf5 +\{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red180\\green36\\blue25;\\red159\\green160\\blue28;\cf2 \
+\cf5 +\\red46\\green174\\blue187;\\red47\\green180\\blue29;\}\cf2 \
+\cf5 +\{\\*\\expandedcolortbl;;\\csgray\\c0;\\cssrgb\\c76409\\c21698\\c12524;\\cssrgb\\c68468\\c68012\\c14208;\cf2 \
+\cf5 +\\cssrgb\\c20196\\c73240\\c78250;\\cssrgb\\c20238\\c73898\\c14947;\}\cf2 \
+\cf5 +\\paperw11900\\paperh16840\\margl1440\\margr1440\\vieww11520\\viewh8400\\viewkind0\cf2 \
+\cf5 +\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx61\cf2 :...skipping...\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..2c00aee
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/tutorials/Untitled.rtf
+\f0\b0 \
+\cf4 @@ -0,0 +1,181 @@\cf2 \
+\cf5 +\{\\rtf1\\ansi\\ansicpg1252\\cocoartf2577\cf2 \
+\cf5 +\\cocoatextscaling0\\cocoaplatform0\{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\}\cf2 \
+\cf5 +\{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red180\\green36\\blue25;\\red159\\green160\\blue28;\cf2 \
+\cf5 +\\red46\\green174\\blue187;\\red47\\green180\\blue29;\}\cf2 \
+\cf5 +\{\\*\\expandedcolortbl;;\\csgray\\c0;\\cssrgb\\c76409\\c21698\\c12524;\\cssrgb\\c68468\\c68012\\c14208;\cf2 \
+\cf5 +\\cssrgb\\c20196\\c73240\\c78250;\\cssrgb\\c20238\\c73898\\c14947;\}\cf2 \
+\cf5 +\\paperw11900\\paperh16840\\margl1440\\margr1440\\vieww11520\\viewh8400\\viewkind0\cf2 \
+\cf5 +\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\pardirnatural\\partightenfactor0\cf2 \
+Mays-MacBook-Air:rwTODOS may$ git rest HEAD books/book_ideas.md\
+git: 'rest' is not a git command. See 'git --help'.\
+\
+The most similar commands are\
+	restore\
+	reset\
+Mays-MacBook-Air:rwTODOS may$ git reset HEAD books/book_ideas.md\
+Unstaged changes after reset:\
+M	books/book_ideas.md\
+Mays-MacBook-Air:rwTODOS may$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 3 commits.\
+  (use "git push" to publish your local commits)\
+\
+Changes to be committed:\
+  (use "git restore --staged <file>..." to unstage)\
+	\cf5 new file:   tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png\cf2 \
+	\cf5 new file:   tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png\cf2 \
+	\cf5 new file:   tutorials/Untitled.rtf\cf2 \
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf3 modified:   books/book_ideas.md\cf2 \
+\
+Mays-MacBook-Air:rwTODOS may$ git add -i\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+  1:    unchanged        +2/-1 books/book_ideas.md\
+  2:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png\
+  3:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png\
+  4:      +181/-0      nothing tutorials/Untitled.rtf\
+\
+
+\f1\b *** Commands ***
+\f0\b0 \
+  1: 
+\f1\b \cf6 s
+\f0\b0 \cf2 tatus	  2: 
+\f1\b \cf6 u
+\f0\b0 \cf2 pdate	  3: 
+\f1\b \cf6 r
+\f0\b0 \cf2 evert	  4: 
+\f1\b \cf6 a
+\f0\b0 \cf2 dd untracked\
+  5: 
+\f1\b \cf6 p
+\f0\b0 \cf2 atch	  6: 
+\f1\b \cf6 d
+\f0\b0 \cf2 iff	  7: 
+\f1\b \cf6 q
+\f0\b0 \cf2 uit	  8: 
+\f1\b \cf6 h
+\f0\b0 \cf2 elp\
+
+\f1\b \cf6 What now
+\f0\b0 \cf2 > s\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+  1:    unchanged        +2/-1 books/book_ideas.md\
+  2:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png\
+  3:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png\
+  4:      +181/-0      nothing tutorials/Untitled.rtf\
+\
+
+\f1\b *** Commands ***
+\f0\b0 \
+  1: 
+\f1\b \cf6 s
+\f0\b0 \cf2 tatus	  2: 
+\f1\b \cf6 u
+\f0\b0 \cf2 pdate	  3: 
+\f1\b \cf6 r
+\f0\b0 \cf2 evert	  4: 
+\f1\b \cf6 a
+\f0\b0 \cf2 dd untracked\
+  5: 
+\f1\b \cf6 p
+\f0\b0 \cf2 atch	  6: 
+\f1\b \cf6 d
+\f0\b0 \cf2 iff	  7: 
+\f1\b \cf6 q
+\f0\b0 \cf2 uit	  8: 
+\f1\b \cf6 h
+\f0\b0 \cf2 elp\
+
+\f1\b \cf6 What now
+\f0\b0 \cf2 > u\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+  1:    unchanged        +2/-1 
+\f1\b \cf6 b
+\f0\b0 \cf2 ooks/book_ideas.md\
+
+\f1\b \cf6 Update
+\f0\b0 \cf2 >> b\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+* 1:    unchanged        +2/-1 
+\f1\b \cf6 b
+\f0\b0 \cf2 ooks/book_ideas.md\
+
+\f1\b \cf6 Update
+\f0\b0 \cf2 >> b\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+* 1:    unchanged        +2/-1 
+\f1\b \cf6 b
+\f0\b0 \cf2 ooks/book_ideas.md\
+
+\f1\b \cf6 Update
+\f0\b0 \cf2 >> s\
+
+\f1\b \cf3 Huh (s)?
+\f0\b0 \cf2 \
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+* 1:    unchanged        +2/-1 
+\f1\b \cf6 b
+\f0\b0 \cf2 ooks/book_ideas.md\
+
+\f1\b \cf6 Update
+\f0\b0 \cf2 >>  \
+updated 1 path\
+\
+
+\f1\b *** Commands ***
+\f0\b0 \
+  1: 
+\f1\b \cf6 s
+\f0\b0 \cf2 tatus	  2: 
+\f1\b \cf6 u
+\f0\b0 \cf2 pdate	  3: 
+\f1\b \cf6 r
+\f0\b0 \cf2 evert	  4: 
+\f1\b \cf6 a
+\f0\b0 \cf2 dd untracked\
+  5: 
+\f1\b \cf6 p
+\f0\b0 \cf2 atch	  6: 
+\f1\b \cf6 d
+\f0\b0 \cf2 iff	  7: 
+\f1\b \cf6 q
+\f0\b0 \cf2 uit	  8: 
+\f1\b \cf6 h
+\f0\b0 \cf2 elp\
+
+\f1\b \cf6 What now
+\f0\b0 \cf2 > s\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+  1:        +2/-1      nothing books/book_ideas.md\
+  2:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png\
+  3:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png\
+  4:      +181/-0      nothing tutorials/Untitled.rtf\
+\
+
+\f1\b *** Commands ***
+\f0\b0 \
+  1: 
+\f1\b \cf6 s
+\f0\b0 \cf2 tatus	  2: 
+\f1\b \cf6 u
+\f0\b0 \cf2 pdate	  3: 
+\f1\b \cf6 r
+\f0\b0 \cf2 evert	  4: 
+\f1\b \cf6 a
+\f0\b0 \cf2 dd untracked\
+  5: 
+\f1\b \cf6 p
+\f0\b0 \cf2 atch	  6: 
+\f1\b \cf6 d
+\f0\b0 \cf2 iff	  7: 
+\f1\b \cf6 q
+\f0\b0 \cf2 uit	  8: 
+\f1\b \cf6 h
+\f0\b0 \cf2 elp\
+
+\f1\b \cf6 What now
+\f0\b0 \cf2 > 3\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+  1:        +2/-1      nothing books/book_ideas.md\
+  2:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png\
+  3:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png\
+  4:      +181/-0      nothing tutorials/Untitled.rtf\
+
+\f1\b \cf6 Revert
+\f0\b0 \cf2 >> b\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+* 1:        +2/-1      nothing books/book_ideas.md\
+  2:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png\
+  3:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png\
+  4:      +181/-0      nothing tutorials/Untitled.rtf\
+
+\f1\b \cf6 Revert
+\f0\b0 \cf2 >> \
+reverted 1 path\
+\
+
+\f1\b *** Commands ***
+\f0\b0 \
+  1: 
+\f1\b \cf6 s
+\f0\b0 \cf2 tatus	  2: 
+\f1\b \cf6 u
+\f0\b0 \cf2 pdate	  3: 
+\f1\b \cf6 r
+\f0\b0 \cf2 evert	  4: 
+\f1\b \cf6 a
+\f0\b0 \cf2 dd untracked\
+  5: 
+\f1\b \cf6 p
+\f0\b0 \cf2 atch	  6: 
+\f1\b \cf6 d
+\f0\b0 \cf2 iff	  7: 
+\f1\b \cf6 q
+\f0\b0 \cf2 uit	  8: 
+\f1\b \cf6 h
+\f0\b0 \cf2 elp\
+
+\f1\b \cf6 What now
+\f0\b0 \cf2 > s\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+  1:    unchanged        +2/-1 books/book_ideas.md\
+  2:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png\
+  3:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png\
+  4:      +181/-0      nothing tutorials/Untitled.rtf\
+\
+
+\f1\b *** Commands ***
+\f0\b0 \
+  1: 
+\f1\b \cf6 s
+\f0\b0 \cf2 tatus	  2: 
+\f1\b \cf6 u
+\f0\b0 \cf2 pdate	  3: 
+\f1\b \cf6 r
+\f0\b0 \cf2 evert	  4: 
+\f1\b \cf6 a
+\f0\b0 \cf2 dd untracked\
+  5: 
+\f1\b \cf6 p
+\f0\b0 \cf2 atch	  6: 
+\f1\b \cf6 d
+\f0\b0 \cf2 iff	  7: 
+\f1\b \cf6 q
+\f0\b0 \cf2 uit	  8: 
+\f1\b \cf6 h
+\f0\b0 \cf2 elp\
+
+\f1\b \cf6 What now
+\f0\b0 \cf2 > p\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+  1:    unchanged        +2/-1 
+\f1\b \cf6 b
+\f0\b0 \cf2 ooks/book_ideas.md\
+
+\f1\b \cf6 Patch update
+\f0\b0 \cf2 >> b\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+* 1:    unchanged        +2/-1 
+\f1\b \cf6 b
+\f0\b0 \cf2 ooks/book_ideas.md\
+
+\f1\b \cf6 Patch update
+\f0\b0 \cf2 >> \
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b \cf6 (1/1) Stage this hunk [y,n,q,a,d,s,e,?]? 
+\f0\b0 \cf2 ?\
+
+\f1\b \cf3 y - stage this hunk
+\f0\b0 \cf2 \
+
+\f1\b \cf3 n - do not stage this hunk
+\f0\b0 \cf2 \
+
+\f1\b \cf3 q - quit; do not stage this hunk or any of the remaining ones
+\f0\b0 \cf2 \
+
+\f1\b \cf3 a - stage this hunk and all later hunks in the file
+\f0\b0 \cf2 \
+
+\f1\b \cf3 d - do not stage this hunk or any of the later hunks in the file
+\f0\b0 \cf2 \
+
+\f1\b \cf3 s - split the current hunk into smaller hunks
+\f0\b0 \cf2 \
+
+\f1\b \cf3 e - manually edit the current hunk
+\f0\b0 \cf2 \
+
+\f1\b \cf3 ? - print help
+\f0\b0 \cf2 \
+\cf4 @@ -4,7 +4,8 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b \cf6 (1/1) Stage this hunk [y,n,q,a,d,s,e,?]? 
+\f0\b0 \cf2 s\
+
+\f1\b Split into 2 hunks.
+\f0\b0 \
+\cf4 @@ -4,7 +4,7 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+
+\f1\b \cf6 (1/2) Stage this hunk [y,n,q,a,d,j,J,g,/,e,?]? 
+\f0\b0 \cf2 y\
+\cf4 @@ -8,3 +8,4 @@\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b \cf6 (2/2) Stage this hunk [y,n,q,a,d,K,g,/,e,?]? 
+\f0\b0 \cf2 n\
+\
+
+\f1\b *** Commands ***
+\f0\b0 \
+  1: 
+\f1\b \cf6 s
+\f0\b0 \cf2 tatus	  2: 
+\f1\b \cf6 u
+\f0\b0 \cf2 pdate	  3: 
+\f1\b \cf6 r
+\f0\b0 \cf2 evert	  4: 
+\f1\b \cf6 a
+\f0\b0 \cf2 dd untracked\
+  5: 
+\f1\b \cf6 p
+\f0\b0 \cf2 atch	  6: 
+\f1\b \cf6 d
+\f0\b0 \cf2 iff	  7: 
+\f1\b \cf6 q
+\f0\b0 \cf2 uit	  8: 
+\f1\b \cf6 h
+\f0\b0 \cf2 elp\
+
+\f1\b \cf6 What now
+\f0\b0 \cf2 > s\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+  1:        +1/-1        +1/-0 books/book_ideas.md\
+  2:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png\
+  3:       binary      nothing tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png\
+  4:      +181/-0      nothing tutorials/Untitled.rtf\
+\
+
+\f1\b *** Commands ***
+\f0\b0 \
+  1: 
+\f1\b \cf6 s
+\f0\b0 \cf2 tatus	  2: 
+\f1\b \cf6 u
+\f0\b0 \cf2 pdate	  3: 
+\f1\b \cf6 r
+\f0\b0 \cf2 evert	  4: 
+\f1\b \cf6 a
+\f0\b0 \cf2 dd untracked\
+  5: 
+\f1\b \cf6 p
+\f0\b0 \cf2 atch	  6: 
+\f1\b \cf6 d
+\f0\b0 \cf2 iff	  7: 
+\f1\b \cf6 q
+\f0\b0 \cf2 uit	  8: 
+\f1\b \cf6 h
+\f0\b0 \cf2 elp\
+
+\f1\b \cf6 What now
+\f0\b0 \cf2 > d\
+     
+\f1\b       staged     unstaged path
+\f0\b0 \
+  1:        +1/-1        +1/-0 
+\f1\b \cf6 b
+\f0\b0 \cf2 ooks/book_ideas.md\
+  2:      +181/-0      nothing 
+\f1\b \cf6 t
+\f0\b0 \cf2 utorials/Untitled.rtf\
+
+\f1\b \cf6 Review diff
+\f0\b0 \cf2 >> b\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..e993df4 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,7 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+
+\f1\b *** Commands ***
+\f0\b0 \
+  1: 
+\f1\b \cf6 s
+\f0\b0 \cf2 tatus	  2: 
+\f1\b \cf6 u
+\f0\b0 \cf2 pdate	  3: 
+\f1\b \cf6 r
+\f0\b0 \cf2 evert	  4: 
+\f1\b \cf6 a
+\f0\b0 \cf2 dd untracked\
+  5: 
+\f1\b \cf6 p
+\f0\b0 \cf2 atch	  6: 
+\f1\b \cf6 d
+\f0\b0 \cf2 iff	  7: 
+\f1\b \cf6 q
+\f0\b0 \cf2 uit	  8: 
+\f1\b \cf6 h
+\f0\b0 \cf2 elp\
+
+\f1\b \cf6 What now
+\f0\b0 \cf2 > q\
+Bye.\
+Mays-MacBook-Air:rwTODOS may$ git diff\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index e993df4..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -8,3 +8,4 @@\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+Mays-MacBook-Air:rwTODOS may$ git diff --staged\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..e993df4 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,7 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..2c00aee
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/tutorials/Untitled.rtf
+\f0\b0 \
+\cf4 @@ -0,0 +1,181 @@\cf2 \
+\cf5 +\{\\rtf1\\ansi\\ansicpg1252\\cocoartf2577\cf2 \
+\cf5 +\\cocoatextscaling0\\cocoaplatform0\{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\}\cf2 \
+\cf5 +\{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red180\\green36\\blue25;\\red159\\green160\\blue28;\cf2 \
+\cf5 +\\red46\\green174\\blue187;\\red47\\green180\\blue29;\}\cf2 \
+\cf5 +\{\\*\\expandedcolortbl;;\\csgray\\c0;\\cssrgb\\c76409\\c21698\\c12524;\\cssrgb\\c68468\\c68012\\c14208;\cf2 \
+\cf5 +\\cssrgb\\c20196\\c73240\\c78250;\\cssrgb\\c20238\\c73898\\c14947;\}\cf2 \
+\cf5 +\\paperw11900\\paperh16840\\margl1440\\margr1440\\vieww11520\\viewh8400\\viewkind0\cf2 \
+\cf5 +\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\pardirnatural\\partightenfactor0\cf2 \
+\cf5 +\cf2 \
+\cf5 +\\f0\\fs22 \\cf2 \\CocoaLigature0 Last login: Fri Jan 22 13:32:18 on ttys002\\\cf2 \
+\cf5 +\\\cf2 \
+\cf5 +The default interactive shell is now zsh.\\\cf2 \
+Mays-MacBook-Air:rwTODOS may$ git commit -m "Completed the CVS book"\
+[master 49fec55] Completed the CVS book\
+ 4 files changed, 182 insertions(+), 1 deletion(-)\
+ create mode 100644 tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png\
+ create mode 100644 tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png\
+ create mode 100644 tutorials/Untitled.rtf\
+Mays-MacBook-Air:rwTODOS may$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 4 commits.\
+  (use "git push" to publish your local commits)\
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git restore <file>..." to discard changes in working directory)\
+	\cf3 modified:   books/book_ideas.md\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Mays-MacBook-Air:rwTODOS may$ git log -p\
+\cf7 commit 49fec552951dc6f27aedd2f06e8e86ffd420ea91 (
+\f1\b \cf4 HEAD -> \cf5 master
+\f0\b0 \cf7 )\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Tue Jan 26 16:58:08 2021 +0800\
+\
+    Completed the CVS book\
+\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..e993df4 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,7 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png differ\
+
+\f1\b diff --git a/tutorials/Untitled.rtf b/tutorials/Untitled.rtf
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..2c00aee
+\f0\b0 \
+
+\f1\b --- /dev/null
+\f0\b0 \
+
+\f1\b +++ b/tutorials/Untitled.rtf
+\f0\b0 \
+\cf4 @@ -0,0 +1,181 @@\cf2 \
+\cf5 +\{\\rtf1\\ansi\\ansicpg1252\\cocoartf2577\cf2 \
+\cf5 +\\cocoatextscaling0\\cocoaplatform0\{\\fonttbl\\f0\\fnil\\fcharset0 Menlo-Regular;\\f1\\fnil\\fcharset0 Menlo-Bold;\}\cf2 \
+\cf5 +\{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red180\\green36\\blue25;\\red159\\green160\\blue28;\cf2 \
+\cf5 +\\red46\\green174\\blue187;\\red47\\green180\\blue29;\}\cf2 \
+\cf5 +\{\\*\\expandedcolortbl;;\\csgray\\c0;\\cssrgb\\c76409\\c21698\\c12524;\\cssrgb\\c68468\\c68012\\c14208;\cf2 \
+\cf5 +\\cssrgb\\c20196\\c73240\\c78250;\\cssrgb\\c20238\\c73898\\c14947;\}\cf2 \
+\cf5 +\\paperw11900\\paperh16840\\margl1440\\margr1440\\vieww11520\\viewh8400\\viewkind0\cf2 \
+Mays-MacBook-Air:rwTODOS may$ git add -p\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index e993df4..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -8,3 +8,4 @@\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+
+\f1\b \cf6 (1/1) Stage this hunk [y,n,q,a,d,e,?]? 
+\f0\b0 \cf2 y\
+\
+Mays-MacBook-Air:rwTODOS may$ git commit -m "Adding the new book ideas"\
+[master 2e06abc] Adding the new book ideas\
+ 1 file changed, 1 insertion(+)\
+Mays-MacBook-Air:rwTODOS may$ git log\
+\cf7 commit 2e06abc2677ef03a6b0c79b062f27f4313c315f6 (
+\f1\b \cf4 HEAD -> \cf5 master
+\f0\b0 \cf7 )\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Tue Jan 26 17:00:32 2021 +0800\
+\
+    Adding the new book ideas\
+\
+\cf7 commit 49fec552951dc6f27aedd2f06e8e86ffd420ea91\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Tue Jan 26 16:58:08 2021 +0800\
+\
+    Completed the CVS book\
+\
+\cf7 commit 24fc5ece55b7d7c04da4bac9b35e204266b52363\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Fri Jan 22 14:52:08 2021 +0800\
+\
+    starting the arts'n'crafts team\
+\
+\cf7 commit f4341b7dd21212e7902d1aaf6d448a8e846ad86c\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Fri Jan 22 13:49:41 2021 +0800\
+\
+    Creating the tutorials directory\
+\
+\cf7 commit e4f838708e08b6a93a9a4c1f1de9e9d7134eb844\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Fri Jan 22 13:41:29 2021 +0800\
+\
+    Adding the new tutorials by tutorials book idea (IF I KEEP WRITING...)\
+    \
+    Convention dictates that you title a commit, and then miss a\
+    line, before filling in any detailed comments about the\
+    commit.\
+\
+\cf7 commit 23f8378892a8967a343b83ce3a1e3aaea87db8b9 (
+\f1\b \cf3 origin/master
+\f0\b0 \cf7 , 
+\f1\b \cf3 origin/HEAD
+\f0\b0 \cf7 )\cf2 \
+Author: Sam Davies <sam@razeware.com>\
+Date:   Tue Jun 20 11:03:25 2017 +0100\
+\
+    Breaking into the live-streaming arena\
+\
+\cf7 commit cd95f834157d6e47b67b583aab7f29542d1a9b3f\cf2 \
+Author: Sam Davies <sam@razeware.com>\
+Date:   Tue Jun 20 10:54:03 2017 +0100\
+\
+    Some scratch ideas for the iOS team\
+\
+\cf7 commit fd660b92306736e53745d79ce3d46a7d5080d537\cf2 \
+Author: Sam Davies <sam@razeware.com>\
+Date:   Tue Jun 20 10:42:20 2017 +0100\
+\
+    Adding files to collect article ideas\
+\
+\cf7 commit e2c18cc476b0c0b5fa40a4fa05b330a35e378301\cf2 \
+Merge: f52365b 78956d5\
+Author: Sam Davies <sam@razeware.com>\
+Date:   Tue Jun 20 09:47:43 2017 +0100\
+\
+    Merge branch 'video_team'\
+\
+\cf7 commit f52365b266e1d6bbeef18a37a4b76e1da0119339\cf2 \
+Author: Sam Davies <sam@razeware.com>\
+Date:   Tue Jun 20 09:47:31 2017 +0100\
+\
+    Turns out I cannot spell fortran\
+\
+\cf7 commit 64952b99423edc0cefeb381754a31f02172fb34d\cf2 \
+Author: Sam Davies <sam@razeware.com>\
+Date:   Tue Jun 20 09:46:57 2017 +0100\
+\
+    Creating book ideas file\
+\
+\cf7 commit 78956d5b9e1444023c3715320b789082c19790be\cf2 \
+Author: Sam Davies <sam@razeware.com>\
+Date:   Tue Jun 20 09:44:55 2017 +0100\
+\
+    Fixing the formatting of the content ideas file\
+\
+\cf7 commit 4f6eac3ea3083af92b712f76b90737920bbccf69\cf2 \
+Author: Sam Davies <sam@razeware.com>\
+Date:   Tue Jun 20 09:44:28 2017 +0100\
+\
+    Adding file for platform ideas\
+\
+\cf7 commit 36a243a7815901c1aacbba3b8cc99dd57e70b027\cf2 \
+Author: Sam Davies <sam@razeware.com>\
+Date:   Tue Jun 20 09:39:54 2017 +0100\
+\
+    Creating content ideas for video courses\
+Mays-MacBook-Air:rwTODOS may$ git log -p\
+\cf7 commit 2e06abc2677ef03a6b0c79b062f27f4313c315f6 (
+\f1\b \cf4 HEAD -> \cf5 master
+\f0\b0 \cf7 )\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Tue Jan 26 17:00:32 2021 +0800\
+\
+    Adding the new book ideas\
+\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index e993df4..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -8,3 +8,4 @@\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+\
+\cf7 commit 49fec552951dc6f27aedd2f06e8e86ffd420ea91\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Tue Jan 26 16:58:08 2021 +0800\
+\
+    Completed the CVS book\
+\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..e993df4 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,7 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Mays-MacBook-Air:rwTODOS may$ git log -p\
+\cf7 commit 2e06abc2677ef03a6b0c79b062f27f4313c315f6 (
+\f1\b \cf4 HEAD -> \cf5 master
+\f0\b0 \cf7 )\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Tue Jan 26 17:00:32 2021 +0800\
+\
+    Adding the new book ideas\
+\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index e993df4..be3d53b 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -8,3 +8,4 @@\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+\cf5 +- [ ] 50 Shades of Green\cf2 \
+\
+\cf7 commit 49fec552951dc6f27aedd2f06e8e86ffd420ea91\cf2 \
+Author: mayou947 <66154899+mayou947@users.noreply.github.com>\
+Date:   Tue Jan 26 16:58:08 2021 +0800\
+\
+    Completed the CVS book\
+\
+
+\f1\b diff --git a/books/book_ideas.md b/books/book_ideas.md
+\f0\b0 \
+
+\f1\b index 83ff4ea..e993df4 100644
+\f0\b0 \
+
+\f1\b --- a/books/book_ideas.md
+\f0\b0 \
+
+\f1\b +++ b/books/book_ideas.md
+\f0\b0 \
+\cf4 @@ -4,7 +4,7 @@\cf2 \
+ - [x] Advanced debugging and reverse engineering\
+ - [ ] Animal husbandry by tutorials\
+ - [ ] Beginning tree surgery\
+\cf3 -- [ ] CVS by tutorials\cf2 \
+\cf5 +- [x] CVS by tutorials\cf2 \
+ - [ ] Fortran for fun and profit\
+ - [x] RxSwift by tutorials\
+ - [ ] Writing tutorials, by tutorials\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..a1f8e72
+\f0\b0 \
+Binary files /dev/null and b/tutorials/Screen Shot 2021-01-22 at 2.52.56 pm.png differ\
+
+\f1\b diff --git a/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png b/tutorials/Screen Shot 2021-01-22 at 2.56.16 pm.png
+\f0\b0 \
+
+\f1\b new file mode 100644
+\f0\b0 \
+
+\f1\b index 0000000..9e74eaa
+\f0\b0 \
+Mays-MacBook-Air:rwTODOS may$ \
+}
